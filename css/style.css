@@ -9,13 +9,64 @@
     --filter-bg-color: #DEEBFF;
 }
 
+h1 {
+    margin-bottom: 12px;
+}
+
 .fa-solid {
     color: var(--main-color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link:hover {
+    color: #0065FC;
+    font-weight: 500;
 }
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    height: 20px;
+    padding-left: 50px;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlink {
+    min-width: 100px;
+    padding: 21px;
+    text-align: center;
+}
+
+.navlink:hover {
+    /* border-top: 2px solid #0065FC; */
+    text-decoration: underline 2px #0065FC;
+    text-underline-offset: -36px;
+    
 }
 
 .main-container {
@@ -23,6 +74,96 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+.intro-text {
+    margin: 0 0 30px;
+}
+
+.searchbar-bloc {
+    display: flex;
+    margin: 20px 0;
+}
+
+#location {
+    color: black;
+    width: 40px;
+    line-height: 40px;
+    background-color: #e8e9eb;
+    border-radius: 10px 0 0 10px;
+    font-size: 15px;
+}
+
+#searchbar {
+    border: 1px solid #e8e9eb;
+    padding: 5px 15px;
+    min-width: 200px;
+}
+
+#searchbar::placeholder {
+    color: black;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+#search-submit {
+    background-color: #0065fc;
+    color: white;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.filtes {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 4rem;
+    margin: 20px 0;
+}
+
+#btn-filter {
+    display: flex;
+    justify-content: center;
+    line-height: 2em;
+    border: 2px solid rgb(212, 210, 210);
+    border-radius: 50px;
+    padding: 5px 10px 5px 5px;
+    margin-left: 20px;
+}
+
+#btn-filter:hover{
+    background-color: #deebff;
+}
+
+.icon-filter {
+    width: 40px;
+    font-size: 25px;
+}
+
+.bonus-intro {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.fa-info {
+    font-size: 15px;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid rgb(212, 210, 210);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bonus-intro p {
+    font-size: 18px;
 }
 
 a {
@@ -120,6 +261,25 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+.footer {
+    display: flex;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    background-color: #f0f0f0;
+}
+
+.footer_bloc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_link {
+    line-height: 30px;
+}
+
 
 
 
