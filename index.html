@@ -31,19 +31,31 @@
         <section class="intro-and-search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="intro-text">En plein centre ou en pleine nature</p>
-            <form action="" method="" class="searchbar-bloc">
+            <form class="searchbar-bloc">
                 <i class="fa-solid fa-location-dot" id="location"></i>
                 <input type="search" placeholder="Marseille, France" id="searchbar" name="search">
-                <button type="submit" id="search-submit">Rechercher</button>
+                <button type="submit" id="search-submit">
+                    <p>Rechercher</p>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
             <div class="filtes">
-                <p class="filter-title">Filtres</p>
-                <a href="#" class="btn-filter"><i class="fa-solid fa-money-bill-wave icon-filter"></i> Économique</a>
-                <a href="#" class="btn-filter"><i class="fa-solid fa-person icon-filter"></i> Familial</a>
-                <a href="#" class="btn-filter"><i class="fa-solid fa-heart icon-filter"></i> Romantique</a>
-                <a href="#" class="btn-filter"><i class="fa-solid fa-fire icon-filter"></i> Nos pépites</a>
+                <div class="entete-filtre">
+                    <p class="filter-title">Filtres</p>
+                </div>
+                <div class="filter-card">
+                    <div class="two-btn">
+                        <a href="#" class="btn-filter"><i class="fa-solid fa-money-bill-wave icon-filter"></i> Économique</a>
+                        <a href="#" class="btn-filter"><i class="fa-solid fa-person icon-filter"></i> Familial</a>
+                    </div>
+                    <div class="two-btn">
+                        <a href="#" class="btn-filter"><i class="fa-solid fa-heart icon-filter"></i> Romantique</a>
+                        <a href="#" class="btn-filter"><i class="fa-solid fa-fire icon-filter"></i> Nos pépites</a>
+                    </div>
+                </div>
             </div>
-            <div class="bonus-intro"><i class="fa-solid fa-info"></i>
+            <div class="bonus-intro">
+                <i class="fa-solid fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
@@ -106,7 +118,7 @@
                                 <div class="card-txt">
                                     <h3 class="card-title">Hôtel Les mouettes</h3>
                                     <p class="card-subtitle">
-                                        Nuit à partir de 76 <span class="euro">€</span>
+                                        Nuit à partir de 76<span class="euro">€</span>
                                     </p>
                                 </div>
                                 <div class="card-rating">
