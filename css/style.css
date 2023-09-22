@@ -176,9 +176,10 @@ a {
     margin: 20px 0;
 }
 
-#btn-filter {
+.btn-filter {
     display: flex;
     justify-content: center;
+    align-items: center;
     line-height: 2em;
     border: 2px solid rgb(212, 210, 210);
     border-radius: 50px;
@@ -327,7 +328,7 @@ a {
 }
 
 .card-rating {
-    margin-bottom: 10 px;
+    margin-bottom: 10px;
     display: flex;
 }
 
