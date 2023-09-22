@@ -169,7 +169,7 @@ a {
     border-radius: 0 10px 10px 0;
 }
 
-#search-submit a{
+#search-submit span{
     margin: 0;
 }
 
@@ -544,7 +544,7 @@ a {
         width: 10%;
     }
 
-    #search-submit a{
+    #search-submit span{
         display: none;
     }
 
