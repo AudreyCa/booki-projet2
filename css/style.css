@@ -404,6 +404,17 @@ a {
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+    clip-path: circle(100%);
+    transition: clip-path .4s ease-out;
+}
+
+.card-activity:hover .img-card-activity{
+    clip-path: circle(35% at 50%);
+    background-color: black;
+}
+
+.card-activity:hover {
+    background-color: #DEEBFF;
 }
 
 .title-activity-card {
