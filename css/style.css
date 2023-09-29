@@ -79,7 +79,7 @@ a {
 }
 
 .euro {
-    font-weight: 500;
+    font-weight: 800;
     font-size: 13px;
 }
 
@@ -156,8 +156,8 @@ a {
 
 #searchbar::placeholder {
     color: black;
-    font-size: 18px;
-    font-weight: 900;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 #search-submit {
@@ -178,11 +178,9 @@ a {
     display: none;
 }
 
-.filtes {
+.filtres {
     display: flex;
-    /* align-items: center; */
     font-weight: 700;
-    font-size: 18px;
     flex-wrap: wrap;
     width: 100%;
     min-height: 70px;
@@ -192,11 +190,11 @@ a {
 .entete-filtre{
     margin: 10px;
     line-height: 10px;
+    font-size: clamp(0.8125rem, 0.6786rem + 0.7143vw, 1.125rem);
 }
 
-.filter-card, .two-btn{
+.filter-card {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .btn-filter {
@@ -206,12 +204,14 @@ a {
     line-height: 2em;
     border: 2px solid rgb(212, 210, 210);
     border-radius: 50px;
-    padding: 5px 10px 5px 5px;
-    margin: 10px;
+    padding: 5px 15px 5px 5px;
+    margin: 5px;
+    font-size: clamp(0.8125rem, 0.6786rem + 0.7143vw, 1.125rem);
 }
 
 .btn-filter i{
     width: 40px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,7 +503,7 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.89px) {
 
     body {
         width: 100%;
@@ -574,14 +574,21 @@ a {
         align-items: center;
     }
 
-    .filtes {
+    .filtres {
         display: flex;
         flex-direction: column;
     }
     
-    .filter-card{
+    .filter-card {
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .btn-filter{
+        width: 40%;
+        margin: 2px;
+        height: 35px;
     }
 
     #hebergements-and-populaires {
